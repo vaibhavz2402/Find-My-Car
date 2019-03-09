@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Find My Car
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1  id="test">Enter Your Information</h1>
+            <div class="jumbotron ">
+                <form id="inputForm">
+                    <h3>Information</h3><br>
+                    <div class="form-group">
+                        <label >Name: </label>
+                        <input type="text" name='name' id='name' placeholder="Enter username" class="form-control "></input>
+                    </div>
+                    <div class="form-group">
+                        <label >Address: </label>
+                        <input type="text" id="address" name='address' placeholder="Enter Address" class="form-control "></input>
+                    </div>
+                    <div class="form-group">
+                        <label >Contact Number: </label>
+                        <input type="number" id="mobileNumber" name='mobileNumber' placeholder="Enter contact number" class="form-control "></input>
+                    </div>
+                    <div class="form-group">
+                        <label >Car Number: </label>
+                        <input type="text" id="carNumber" name='carNumber' placeholder="Enter Registered Car number" class="form-control "></input>
+                    </div>
+                    <div class="form-group">
+                        <label >Chasis Number: </label>
+                        <input type="text" id="chasisNumber" name='chasisNumber' placeholder="Enter Chasis number" class="form-control "></input>
+                    </div>
+                    <button type ="submit" class="btn btn-primary" id="myBtn" >Submit</button>
+                </form>
+                <script>
+                    document.getElementById("myBtn").addEventListener("click", function(){
+                        window.location="http://localhost:63342/hackbpit/sigin.html?_ijt=ne323tqvt563bas31h0iv4dv87";
+                    });
+                </script>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+        <script src="userInfo.js"></script>
+    </body>
+</html>
